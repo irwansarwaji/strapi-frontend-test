@@ -19,14 +19,14 @@ export default function Homepage() {
 
               console.log(review)
               return (
-                <div key={review.attributes.id} className="review-card">
+                <div key={review.id} className="review-card">
                 <div className="rating">{review.attributes.rating}</div>
                 <h2>{review.attributes.title}</h2>
                 
-                {/* <small>console list</small>
+                <small>console list</small>
       
-                <p>{review.body.substring(0, 200)}...</p>
-                <Link to={`/details/${review.id}`}>Read more</Link> */}
+                <p>{review.attributes.body.substring(0, 200)}...</p>
+                <Link to={`/details/${review.id}`}>Read more</Link>
               </div>
               )
              
